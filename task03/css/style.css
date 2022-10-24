@@ -37,7 +37,9 @@ header,
 footer {
     background-color: #F2F2F2;
 }
-main,
+main{
+    text-align: center;
+}
 footer {
     text-align: center;
     padding-top:80px;
