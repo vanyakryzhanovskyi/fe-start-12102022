@@ -1,0 +1,64 @@
+*{ 
+    box-sizing: border-box;
+}
+body {
+    background-color: #E5E5E5;
+    padding-top: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
+.diia{
+    background-color: black;
+    width: 512px;
+    height: 512px;
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 109px;
+    /* text-align: center; */
+}
+.flag {
+    margin-top: 32px;
+}
+.square{
+    background-color: yellow;
+    width: 512px;
+    height: 512px;
+    position:absolute;
+    left: 541px;
+    top: 495px;
+    z-index: 2;
+    
+}
+.glyphsquare {
+    position: absolute;
+    top: 145px;
+   margin-left: 53px;
+   rotate: 359deg;
+}
+.wrappercircle{
+    background-color:white;
+    width: 512px;
+    height: 512px;
+    position:absolute;
+    border-top:#2137FC 1px solid;
+    border-bottom: #2137FC 1px solid;
+    left: 964px;
+    top: 912px;
+    padding: 34px;
+    z-index: 1;
+}
+.circle{
+    background-color: yellow;
+    width: 444px;
+    height: 444px;
+    position: absolute;
+    border-radius: 222px;
+   
+}
+.glyphcircle{
+    position: absolute;
+    bottom: 18px;
+    left: 40px;
+    rotate: 359deg;
+    
+}
