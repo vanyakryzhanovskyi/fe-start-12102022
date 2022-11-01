@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+header{
+    padding: 16px 12px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    margin: 0 auto;
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 23px;
+}
+.buynow {
+    float: right;
+    margin-left: 31px;
+    width: 128px;
+    height: 45px;
+    font-size: 21px;
+
+}
+.links{
+    float: right;
+}
+.authors,
+.checkdemo {
+    display: inline-block;
+}
+.markheaders ul li {
+    display: inline-block;
+    list-style: none;
+}
