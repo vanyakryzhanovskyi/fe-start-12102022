@@ -1,41 +1,551 @@
 *{
     box-sizing: border-box;
 }
+*{margin: 0;
+    padding: 0;
+} 
+body,html{
+    font-family: 'Poppins', sans-serif;
+}
 .clearfix:after{
     content:"";
     display: table;
     clear: both;
 }
 header{
-    padding: 16px 12px;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .logo{
     float: left;
     margin: 0 auto;
+    line-height: 32px;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 16px 12px;
+
 }
 
-.links ul li{
+.links ul li {
     list-style: none;
     display: inline-block;
     margin-left: 23px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: 500;
+
 }
 .buynow {
     float: right;
-    margin-left: 31px;
-    width: 128px;
-    height: 45px;
+    margin: 25px 12px 25px 31px;
+    /* width: 128px;
+    height: 45px; */
     font-size: 21px;
-
+    font-weight: 500;
+    padding: 10px 16px;
+    background-color: white;
+    color: #2203E4;
+    border: 1px solid #2203E4;
+   
 }
+.buynow:hover{
+   
+    background-color: #2203E4;
+    color: white;
+    border: 1px solid white;
+    text-decoration: underline  white;
+}
+
 .links{
     float: right;
 }
-.authors,
+.title {
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #575757;
+}
+.wrapper {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 0px auto;
+    overflow: hidden;
+    
+}
+
+.titlebutton{
+    position: absolute;
+    float: left;
+    padding: 10px;
+    margin-right: 48px;
+    margin-top: 256px;
+    margin-bottom: 256px;
+}
+.iphone{
+    position: absolute;
+    right: -49.5px;
+    margin-top: 118px;
+    margin-bottom: 118px;
+    
+}
+.titlebutton>h3{
+    font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.titlebutton>p{
+    margin-bottom: 24px;
+}
+.author{
+    padding: 10px 16px;
+    background-color: #0062FF;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: 1px solid white;
+}
+.author:hover{
+    background-color: white;
+    color: #0062FF;
+    border: 1px solid #0062Ff ;
+    text-decoration: underline #0062Ff;
+}
+.checkdemo{
+    padding: 10px 16px ;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 400;
+    color: #575757;
+    border: 1px solid #575757;
+}
+.checkdemo:hover{
+    background-color: #575757;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: 1px solid white;
+    text-decoration: underline #575757;
+}
+.author,
 .checkdemo {
     display: inline-block;
 }
 .markheaders ul li {
     display: inline-block;
     list-style: none;
+    margin: 24px 19px 0 0;
+}
+.authors{
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 1190px;
+}
+.paragraph>h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.mark{
+    margin-top: 36px;
+    margin-bottom: 143px;
+}
+.avatar,
+.markheaders{
+    float: left;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    margin: 12px 12px 12px 0;
+    
+}
+.markheaders{
+    margin-left: 34px ;
+    text-align: left;
+
+}
+.markheaders>h3 {
+    font-size: 27px ;
+    font-weight: 600;
+}
+.markheaders>h4{
+    font-size: 21px ;
+    font-weight: 500;
+    color: #575757;
+    margin-bottom: 12px;
+
+}
+.specialist{
+    float: left;
+    margin: 7px 0 7px 112px;
+    text-align: left;
+}
+.specialist>h3 {
+    position: relative;
+     font-size: 27px ;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+.specialist>h3::before{
+    content: url(../img/Vector.png);
+    position: absolute;
+    left: -15px;
+    bottom:-13px;
+}
+.specialist>h4 {
+    font-size: 21px ;
+    font-weight: 500;
+    color: #575757;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+.gregory,
+.henry{
+    font-size: 21px;
+    font-weight: 500;
+    color: #DEA405;
+    margin-left: 16px;
+    
+}
+.gregory::after{
+content: "Programmer";
+font-size: 16px;
+font-weight: 400;
+color: #DEA405;
+display: block;
+}
+.henry::after{
+    content: "Programmer";
+    font-size: 16px;
+    font-weight: 400;
+    color: #DEA405;
+    display: block;
+}
+.forwho{
+    background-color: #0062FF;
+    text-align: center;
+    margin: 0 auto;
+}
+.paragraphforwho{
+    padding-top: 71px;
+}
+.paragraphforwho>h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: white;
+}
+.paragraphforwho>p{
+    color: white;
+    margin-bottom: 64px;
+}
+.wrapperforwho {
+width: 1262px;
+margin: 0 auto;
+}
+.firstrow{
+    margin-bottom: 46px;
+
+}
+.secondrow{
+    margin-bottom: 64px;
+}
+.forstudents,
+.foragency{
+    float: left;
+}
+.forfreelaners,
+.formaketers {
+    float: right;
+}
+.imgstudent,
+.forstudentsinfo,
+.freelanerimg,
+.freelanersinfo,
+.agencyimg,
+.foragencyinfo,
+.marketersimg,
+.marketersinfo {
+    display: inline-block;
+}
+.forstudentsinfo,
+.freelanersinfo,
+.foragencyinfo,
+.marketersinfo{
+    text-align: left;
+    margin:14px 0;
+    vertical-align: top;
+    color: white;
+}
+.forstudentsinfo>h3,
+.freelanersinfo>h3,
+.foragencyinfo>h3,
+.marketersinfo>h3{
+    font-size: 27px;
+    font-weight: 600;
+}
+.forstudentsinfo>p,
+.freelanersinfo>p,
+.foragencyinfo>p,
+.marketersinfo>p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: white;
+}
+.imgstudent,
+.freelanerimg,
+.agencyimg,
+.marketersimg {
+    margin-right: 34px;
+}
+.iwantit{
+    background-color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2203E4;
+    border: 1px solid #2203E4;
+    margin-bottom: 71px;
+}
+.iwantit:hover {
+    background-color: #0062FF;
+    color: white;
+    border: 1px solid white;
+}
+.demo{
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 63px;
+}
+.paragraphdemo>h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.wrapperdemo{
+    width: 1103px;
+    padding-top: 44px;
+    margin: 0 auto;
+}
+.list{
+    float: left;
+}
+.list>h4{
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+.video{
+    float: right;
+    width: 444px;
+    height: 296px;
+    background-image:url(../img/checkdemoimg.png);
+    position: relative; 
+   }
+.video>img{
+    position: absolute;
+    left: 197px;
+    top: 120px;
+   
+}
+.opinions{
+    background-color: #FFBE0B;
+    text-align: center;
+    padding-top: 67px;
+    padding-bottom: 67px;
+}
+.opinions>.paragraph{
+padding-bottom: 42px;
+}
+.wrapperopinion{
+position: relative;
+margin:0 auto;
+width: 1274px;
+height: 230px;
+overflow: hidden;
+
+
+}
+.opinioncenter{
+    width: 702px;
+    height: 230px;
+    position: absolute;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    left: 736px ;
+
+}
+.imgmessage{
+    position: absolute;
+    margin: 94px 12px 94px 16px;
+    left: 0px;
+}
+.user {
+    position: absolute;
+    margin: 59px 16px 59px 0 ;
+    text-align: left;
+    left: 76px;
+}
+.user,.imgmessage{
+    display: inline-block;
+}
+.user>h3{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 41px;
+    position: relative;
+}
+.user>h3::before {
+    content: "CEO Jones Inc";
+    font-size: 21px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -21px ;
+}
+.user>h3::after {
+    content: url(../img/4andhalfstar.png);
+    display: inline-block;
+    margin-left: 7px;
+}
+.opinionleft,.opinionright{
+    position: absolute;
+    width: 702px;
+    height: 230px;
+    background-color: rgba(243, 243, 243, 0.4);
+    border-radius: 12px;
+}
+.opinionleft{
+    left: -444px;
+}
+.opinionright{
+    left: 1468px;
+    color: rgba(104, 138, 228, 0.432);
+}
+.opinionright>.user>p{
+    color: rgba(87, 87, 87, 0.35);
+}
+.opinionleft>.user>p{
+    color: rgba(87, 87, 87, 0.35);
+}
+
+.footer{
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 89px;
+
+}
+.produkt {
+    width: 951px;
+    margin: 74px auto;
+}
+.phone{
+    float: left;
+    
+}
+.phoneopinion{
+    float: right;
+    text-align: left;
+    margin: 73px 0 73px 13px;
+}
+.reviews {
+    position: relative;
+    color: rgba(0, 0, 0, 1)
+    ;
+    left: 165px;
+}
+.reviews::before{
+    content: url(../img/4andhalfstar.png);
+    position: absolute;
+    left: -165px;
+    top: -5px;
+}
+.phoneopinion>h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgba(34, 3, 228, 1);
+}
+.add{
+    background-color: rgba(0, 98, 255, 1);
+    color: white;
+    padding: 10px 16px;
+    border: 1px solid rgba(0, 98, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.add:hover{
+    background-color: white;
+    color: rgba(0, 98, 255, 1);;
+    border: 1px solid rgba(0, 98, 255, 1);
+    text-decoration: underline rgba(0, 98, 255, 1) ;
+
+}
+.input>h3{
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 74px   ;
+    margin-bottom: 28px;
+}
+input,
+.discount{
+    display: block;
+    margin: 0 auto;
+}
+.mail {
+    padding: 25px 0 25px 24px;
+    background-color: rgba(58, 134, 255, 0.2);
+    color: rgba(34, 3, 228, 1);
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(58, 134, 255, 0.2);
+    border-radius: 12px;
+    width: 508px;
+    outline: 0 solid transparent;
+}
+.mail::placeholder{
+    color: rgba(34, 3, 228, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+.discount{
+    background-color: rgba(0, 98, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 10px 160.5px;
+    margin-top: 14px;
+    margin-bottom: 103px;
+    border: 1px solid rgba(0, 98, 255, 1) ;
+
+}
+.discount:hover{
+    background-color: white;
+    color: rgba(0, 98, 255, 1);
+    border: 1px solid rgba(0, 98, 255, 1) ;
+    text-decoration: underline rgba(0, 98, 255, 1) ;
+
+
 }
