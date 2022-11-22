@@ -2,5 +2,1149 @@
 box-sizing: border-box;
 }
 *{margin: 0;
-    padding: 0;
+padding: 0;
 }
+.burger{
+    align-self: flex-end;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.705);
+    position: relative;
+}
+.burger-line{
+display: block;
+position: absolute;
+width: 21px;
+border: 2px solid rgba(255, 255, 255, 0.705);
+background-color:  rgba(255, 255, 255, 0.705);
+border-radius: 2px ;
+top: 12px;
+left: 11px;
+}
+.burger-line:nth-child(2){
+    margin-top: 8px;
+}
+.burger-line:nth-child(3){
+    margin-top: 16px;
+}
+
+body{
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    font-family: 'Nunito Sans', sans-serif;
+     font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 64px 84px 0 84px; */
+    align-items: baseline;
+    padding-left: 84px;
+    padding-right: 84px;
+}
+main{
+    text-align: center;
+}
+h2{
+    margin-bottom: 27px;
+    margin-top: 25px;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    line-height: 87px;
+    
+    }
+p{
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 27px;
+}
+.top-before-title{
+    margin-left: 96px;
+    color: #FBD784;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    position: relative;
+}
+.top-before-title::before{
+content: "";
+position: absolute;
+display: block;
+width: 72px;
+border: #FBD784 1px solid;
+background-color: #FBD784;
+top: 10px;
+left: -96px;
+}
+.read-more-link{
+    font-size: 18px;
+    font-weight: 400;
+    color: #FBD784;
+    position: relative;
+}
+.read-more-link::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 16px;
+    background-image: url(../img/vector-right.png);
+    background-size: 100%;
+    top: 3px;
+    left: 103px;
+    }
+.links .horizontal li{
+    display: inline-block;
+    margin-right: 50px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.links,.logo,.search{
+    margin-top: 58px;
+}
+.logo>a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.links .horizontal li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.logolinks:hover{
+    text-decoration: none;
+    color: rgb(214, 166, 166);
+    font-weight: 650;
+    font-size: 25px;
+}
+.searchlink{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+.search{
+    position: relative;
+}
+.search::before{
+    content:"";
+    position: absolute;
+    background-image: url(../img/iconsearch.png);
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    left: -37px;
+}
+.containerdiscover{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aside{
+writing-mode: vertical-rl;
+text-orientation: mixed;
+margin: 268px 124px 0 79px;
+text-align: left;
+}
+.aside ul li {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.aside ul li a:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.discover{
+width: 76%;
+text-align: center;
+/* margin-left: 272px; */
+
+    
+}
+.discover>h4{
+    margin-left: 368px;
+margin-top: 196px;
+margin-bottom: 32px;
+text-align: left;
+}
+
+h1{
+    font-size: 88px;
+    font-weight: 400;
+    color: white;
+    margin: 0 0 126px 272px;
+    padding: 0px;
+    text-align: left;
+}
+.scroll-link-block{
+    margin-bottom: 500px;
+    text-align: center;
+
+}
+.scroll-link{
+    position: relative;
+   font-size: 18px;
+   font-weight: 600;
+   color: white;
+   
+}
+.scroll-link::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/vectordown.png);
+    width: 16px;
+    height: 24px;
+    background-size: 100%;
+    left: 109px;
+    top:0px;
+}
+.container-nusa-tengara{
+    width: 76%;
+    margin: 230px auto;
+}
+.nusa-tengara-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container-nusa-tengara-info{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.read-more-link-block{
+    position: relative;
+}
+.container-bromo{
+    width: 76%;
+    background-image: url(../img/background-bromo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 467px;
+    padding-bottom: 41px;
+}
+.slider{
+    width: 100%;
+    margin-bottom: 44px;
+}
+.left{
+    float: left;
+    margin-left: 50px;
+}
+.right
+{
+    float: right;
+    margin-right: 50px;
+}
+
+span{
+color: #FBD784;
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 6px;
+position: relative;
+}
+span::before{
+    content: "";
+position: absolute;
+display: block;
+width: 72px;
+border: #FBD784 1px solid;
+background-color: #FBD784;
+top: 10px;
+left: -96px;
+}
+span::after{
+    content: "";
+position: absolute;
+display: block;
+width: 72px;
+border: #FBD784 1px solid;
+background-color: #FBD784;
+top: 10px;
+right: -96px;
+}
+.container-indonesian-culture{
+    margin: 0 auto;
+    width: 76%;
+  
+}
+.indonesian-culture-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 226px ;
+    margin-bottom: 250px;
+
+}
+.indonesian-culture-info {
+text-align: left;
+}
+
+label{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 53px 0 0;
+}
+.get-started{
+    padding: 24px 72px;
+    background-color: #FFA343;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid #FFA343 ;
+}
+.get-started:hover{
+    background-color: #f06c39;
+    border: 1px solid rgb(240, 104, 13);
+
+}
+.indonesian-culture-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 55px;
+}
+.biglogo{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 47px;
+}
+.biglogo:hover{
+    font-size: 49px;
+    font-weight: 800;
+    color: #f06c39;
+    text-decoration: none;
+}
+footer{
+    width: 76%;
+    padding-top: 55px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-email-links{
+    display: flex;
+    justify-content: space-between;
+}
+.email-input{
+    text-align: left;
+    width: 40%;
+}
+.email-input>h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+}
+form{
+    width: 85%;
+    
+}
+input[type=email]{
+    width: 71%;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    outline: 0 solid transparent;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.301);
+}
+input[type=email]::placeholder{   
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.button-footer{
+    background-color: rgba(255, 163, 67, 1);
+    vertical-align: bottom;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+    padding: 28px 30px;
+    border: 1px solid rgba(255, 163, 67, 1);
+}
+.button-footer:hover{
+background-color:  #f06c39;
+border: 1px solid  #f06c39;
+}
+.link-service,.link-about,.link-help{
+    margin-top: 34px;
+
+}
+
+.head-links ul li{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFD1A0;
+    list-style: none;
+    line-height: 45px;
+} 
+.head-links ul li a{
+   font-size: 19px;
+   font-weight: 400;
+   color: white;
+   line-height: 45px;
+}
+.container-media-terms{
+    display: flex;
+    justify-content: space-between;
+}
+.terms ul li{
+    display: inline-block;
+    margin:136px 40px 160px 40px;
+}
+.terms ul li a{
+    font-size: 15px ;
+    font-weight:400 ;
+    color: white;
+}
+.media-links ul li{
+    display: inline-block; 
+    margin-right: 50px;
+    margin-top: 136px;
+}
+.footer-copyright{
+    font-size: 18px;
+    font-weight: 600;
+   color: rgba(255, 255, 255, 0.5);
+
+}
+/* .indonesian-culture-img>img{
+    width: 100%;
+}
+.container-nusa-tengara-img>img{
+    width: 100%;
+} */
+/* 820
+390 */
+@media (max-width:1200px){
+
+    h2{
+        margin-bottom: 20px;
+        margin-top: 17px;
+        font-size: 40px;
+        line-height: 50px;
+        
+        }
+    p{
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .top-before-title{
+        margin-left: 75px;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    .top-before-title::before{
+    width: 36px;
+    left: -50px;
+    top: 5px;
+    }
+    .aside{
+        margin: 200px 95px 0 60px;
+        }
+        .discover{
+            width: 90%;
+        }
+        .discover>h4{
+            margin-left: 157px;
+        margin-top: 145px;
+        margin-bottom: 24px;
+        }
+        h1{
+            font-size: 55px;
+            margin: 0 0 95px 105px;
+        }
+        .scroll-link-block{
+            margin-bottom: 350px;
+        }
+        .scroll-link{
+           font-size: 15px;
+           font-weight: 400;
+}
+.scroll-link::after{
+    left: 90px;
+    width: 12px;
+    height: 18px;
+    top: 3px;
+   }
+   .container-nusa-tengara{
+    width: 90%;
+    margin: 160px auto;
+}
+.container-nusa-tengara-info{
+    width: 30%;
+}
+.container-nusa-tengara-img{
+    width: 68%;
+}
+.read-more-link{
+    font-size: 15px;
+}
+.read-more-link::after{
+    left: 85px;
+    width: 18px;
+    height: 12px;
+    top: 5px;
+    }
+    .container-bromo{
+        width: 90%;
+        padding-top: 280px;
+    }
+    .container-indonesian-culture{
+        width: 90%;
+    }
+    .indonesian-culture-title {
+        width: 100%;
+        margin-top: 170px ;
+        margin-bottom: 170px;
+     }
+     label{
+        font-size: 16px;
+        margin: 0 36px 0 0;
+    }
+    .get-started{
+        padding: 16px 54px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .indonesian-culture-footer{
+        margin-bottom: 42px;
+    }
+    .biglogo{
+        font-size: 37px;
+        margin-bottom: 41px;
+    }
+    .biglogo:hover{
+        font-size: 40px;
+    }
+    footer{
+        width: 90%;
+        padding-top: 37px;
+        padding-bottom: 80px;
+    }
+
+    .email-input>h3{
+        font-size: 28px;
+        margin-bottom: 37px;
+    }
+
+    input[type=email]{
+        width: 71%;
+        padding-left: 11px;
+        padding-bottom: 22px;
+        font-size: 17px;
+    }
+    input[type=email]::placeholder{   
+        font-size: 12px;
+    }
+    .button-footer{
+        border-top-left-radius: 6px ;
+        border-top-right-radius: 6px ;
+        padding: 21px 23px;
+    }
+    .link-service,.link-about,.link-help{
+        margin-top: 28px;
+    }
+    
+    .head-links ul li{
+        font-size: 16px;
+        line-height: 33px;
+    } 
+    .head-links ul li a{
+       font-size: 15px;
+       line-height: 33px;
+    }
+    .terms ul li{
+        margin:102px 30px 120px 30px;
+    }
+    .terms ul li a{
+        font-size: 13px ;
+    }
+    .media-links ul li{
+        margin-right: 37px;
+        margin-top: 102px;
+    }
+    .footer-copyright{
+        font-size: 16px;
+ }
+
+}
+@media (max-width:1000px){
+    h2{
+        margin-bottom: 14px;
+        margin-top: 14px;
+        font-size: 32px;
+        line-height: 45px;
+        }
+    p{
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .top-before-title{
+        margin-left: 55px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+    .top-before-title::before{
+    width: 36px;
+    left: -50px;
+    top: 5px;
+    }
+    .aside{
+        margin: 134px 62px 0 40px;
+        }
+        .discover{
+            width: 100%;
+            text-align: center;
+        }
+        .discover>h4{
+        margin-left: 130px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-align: left;
+        }
+        h1{
+            font-size: 44px;
+            margin: 0 0 63px 80px;
+        }
+        .scroll-link-block{
+            margin-bottom: 250px;
+        }
+        .scroll-link{
+           font-size: 12px;
+           font-weight: 400;
+}
+.scroll-link::after{
+    left: 70px;
+    width: 8px;
+    height: 12px;
+    top: 3px;
+   }
+   .container-nusa-tengara{
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+    margin: 115px auto;
+}
+.container-nusa-tengara-info{
+    width: 24%;
+}
+.container-nusa-tengara-img{
+    width: 73%;
+}
+.read-more-link{
+    font-size: 14px;
+}
+.read-more-link::after{
+    width: 14px;
+    height: 10px;
+    top: 5px;
+    left: 80px;
+    }
+    .container-bromo{
+        width: 100%;
+        padding-top: 230px;
+        padding-bottom: 41px;
+    }
+    .container-indonesian-culture{
+        width: 95%;
+    }
+    .indonesian-culture-title {
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 110px ;
+        margin-bottom: 120px;
+     }
+     label{
+        font-size: 14px;
+        margin: 0 25px 0 0;
+    }
+    .get-started{
+        padding: 12px 36px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .indonesian-culture-footer{
+        margin-bottom: 35px;
+    }
+    .biglogo{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .biglogo:hover{
+        font-size: 31px;
+    }
+    footer{
+        width: 95%;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .email-input>h3{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    input[type=email]{
+        width: 75%;
+        padding-left: 8px;
+        padding-bottom: 15px;
+        font-size: 12px;
+    }
+    input[type=email]::placeholder{   
+        font-size: 10px;
+    }
+    .button-footer{
+        border-top-left-radius: 4px ;
+        border-top-right-radius: 4px ;
+        padding: 14px 15px;
+    }
+    .link-service,.link-about,.link-help{
+        margin-top: 17px;
+    }
+    
+    .head-links ul li{
+        font-size: 12px;
+        line-height: 22px;
+    } 
+    .head-links ul li a{
+       font-size: 12px;
+       line-height: 22px;
+    }
+    .terms ul li{
+        margin:68px 20px 80px 20px;
+    }
+    .terms ul li a{
+        font-size: 12px ;
+    }
+    .media-links ul li{
+        margin-right: 25px;
+        margin-top: 68px;
+    }
+    .footer-copyright{
+        font-size: 14px;
+ }
+}
+@media (max-width:820px){
+header{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.links .horizontal li{
+    margin-right: 15px;
+}
+.links,.logo,.search{
+    margin-top: 29px;
+}
+.logo>a{
+    font-size: 15px;
+}
+.links .horizontal li a{
+    font-size: 12px;
+}
+.logolinks:hover{
+    font-weight: 650;
+    font-size: 16px;
+}
+.searchlink{
+    font-size: 12px;
+}
+.search::before{
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    left: -18px;
+    top: 4px;
+}
+.read-more-link::after{
+    left: 69px;
+}
+.read-more-link{
+    font-size: 12px;
+}
+h2{
+    margin-bottom: 15px;
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 25px;
+}
+.aside{
+    margin: 80px 20px 0 15px;
+    }
+    .discover{
+        width: 100%;
+    }
+
+    .discover>h4{
+        margin-left: 100px;
+    margin-top: 75px;
+    }
+    h1{
+        font-size: 45px;
+        margin: 0 0 70px 40px;
+    }
+    .scroll-link-block{
+        margin-bottom: 150px;
+    }
+    .container-nusa-tengara{
+        width: 90%;
+        margin: 100px auto;
+    }
+    .container-nusa-tengara-info,
+    .indonesian-culture-info{
+        width: 50%;
+    }
+    .container-nusa-tengara-img,
+    .indonesian-culture-img{
+        width: 49%;
+    }
+    .container-nusa-tengara-img>img{
+        width: 100%;
+    }
+    .indonesian-culture-img>img{
+        width: 100%;
+    }
+    .container-bromo{
+        padding-top: 150px;
+    }
+    .slider>a{
+        margin: 0 25px 0 25px;
+       width: 10px;
+       height: 15px;
+    }
+    .slider>a>img{
+        width: 100%;
+    }
+    span{
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+span::before{
+width: 36px;
+top: 7px;
+left: -55px;
+}
+span::after{
+width: 36px;
+top: 7px;
+right: -55px;
+}
+.container-indonesian-culture{
+    width: 90%;
+}
+.get-started{
+    padding: 8px 12px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+label{
+    font-size: 12px;
+    margin: 0 12px 0 0;
+}
+.biglogo{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.biglogo:hover{
+    font-size: 16px;
+}
+form{
+    width: 95%;
+}
+.email-input>h3{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+input[type=email]{
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.button-footer{
+    border-top-left-radius: 2px ;
+    border-top-right-radius: 2px ;
+    padding: 8px 10px;
+}
+.button-footer>img{
+    width: 100%;
+}
+.terms ul li{
+    margin:50px 10px 50px 10px;
+}
+.media-links ul li{
+    margin-right: 10px;
+    margin-top: 50px;
+}
+.footer-copyright{
+    font-size: 12px;
+}
+}
+@media (max-width:390px){
+   .logo{
+    margin-top: 0px;
+   }
+    .aside{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .burger{
+        display: block;
+        margin-right: 30px;
+    }
+    .burger,.search{
+        display: inline-block;
+    }
+ header{
+    align-items: center;
+    }
+    .mobile{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .search{
+        margin-top: 0;
+    }
+    .button-footer{
+        border-top-left-radius: 2px ;
+        border-top-right-radius: 2px ;
+        padding: 3px 5px;
+    }
+    .scroll-link-block{
+        margin-bottom: 50px;
+    }
+    .container-nusa-tengara{
+        margin: 50px auto;
+}
+.indonesian-culture-title {
+    margin-top: 50px ;
+    margin-bottom: 50px;
+ }
+ .container-bromo{
+    padding-top: 110px;
+}
+form{
+    width: 100%;
+}
+.button-footer>img{
+    width: 5px;
+    height: 8px;
+}
+.terms ul li{
+ display: block;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.terms ul{
+    margin-top: 40px;
+}
+footer{
+padding-bottom: 10px;
+}
+.footer-copyright{
+    margin-top: 30px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
