@@ -403,6 +403,10 @@ footer{
     }
 }
 @media (max-width:820px) {
+    nav{
+        margin: 0 auto;
+        width: 90%;
+    }
     body,html{
         font-size: 12px;
     }
@@ -411,6 +415,9 @@ footer{
     }
 }
 @media (max-width:600px) {
+    nav{
+        width: 95%;
+    }
     body,html{
         font-size: 8px;
     }
@@ -420,6 +427,11 @@ footer{
     }
     .catalog-product-price>.form>a>img {
         width: 50%;
+    }
+}
+@media (max-width:500px){
+    nav{
+        width: 95%;
     }
 }
 @media (max-width:390px){
